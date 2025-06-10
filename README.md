@@ -18,7 +18,24 @@ composer install
 npm install
 ```
 
-3. Run App
+3. Setup Env
+
+```bash
+cp .env.example .env
+```
+
+-   Setup Database Postgre
+
+    ```javascript
+    DB_CONNECTION=pgsql
+    DB_HOST=127.0.0.1
+    DB_PORT=5432
+    DB_DATABASE=jalan-kerja
+    DB_USERNAME=postgres
+    DB_PASSWORD=
+    ```
+
+4. Run App
 
 ```javascript
 php artisan serve
